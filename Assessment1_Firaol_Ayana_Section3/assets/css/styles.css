@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    background-color: rgb(248, 248, 248);  
+    font-family:arial;
+}
+
+header {
+    background-color: rgb(219, 247, 219);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul{
+    text-align: center;
+
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 20px;
+   
+}
+nav ul li a {
+    text-decoration: none;
+    color: rgb(85, 214, 74);
+    font-size:20px;
+}
+.product-list{
+    display:flex;
+    justify-content: center;
+}
+
+main > h2{
+    padding-left:250px ;
+
+}
+
+.product {
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    width: 300px; 
+    height: 500px; 
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #cdc8c8; 
+    box-sizing: border-box; 
+    margin: 30px;
+    border-radius: 7px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0.2, 0.2, 0.2, 0.2);
+}
+
+.product:hover {
+    transform: scale(1.05); /* Slightly enlarges the product */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    border-color: #a8a8a8; /* Changes the border color */
+}
+
+
+.product img {
+    border-radius: 7px;
+    width: 100%; 
+    height: auto; 
+    align-self: center; 
+}
+
+.product h2, .product p{
+    margin: 10px;
+}
+
+.product .price {
+    font-weight: bold;
+    color: rgb(45, 200, 45); 
+    font-size: 22px;
+    font-weight: 200;
+}
+footer{
+    background-color: rgb(43, 88, 43);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(248, 248, 248);
+}
